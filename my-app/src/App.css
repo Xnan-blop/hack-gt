@@ -13,6 +13,19 @@
   }
 }
 
+.float-left {
+  float: left;
+  border-color: aqua;
+  border-radius: 1in;
+  box-shadow: #61dafb;
+  margin-left: 50px;
+}
+
+.float-right {
+  float: right;
+  border-color: chartreuse;
+}
+
 .App-header {
   background-image: linear-gradient(to bottom right, rgb(217, 0, 255), rgb(24, 49, 150));
   min-height: 100vh;
@@ -40,4 +53,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.submit {
+  margin-top: 50px;
 }
