@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React, {useState, useEffect} from 'react'
 function App() {
@@ -39,12 +38,21 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <article class="float">
+        <div class="float-left">
         <input type="file" multiple accept="image/*" onChange={onImageChange} />
         { imageURLs.map(imageSrc => <img className='images' src={imageSrc} />)}
+        </div>
+        <div class="float-right">
         <input type="file" multiple accept="image/*" onChange={onSecondImageChange} />
-        { secondImage.map(aimageSrc => <img className='images' src={aimageSrc} />)}
-        <button onClick={submitHandler}>Submit</button>
+        { secondImage.map(aimageSrc => <img className='images' src={aimageSrc} />)} 
+        </div>
+        
+      </article>
+        
+        <button class="button-56" role="button" onClick={submitHandler}>Submit</button>
       </header>
+      
     </div>
     
   );
