@@ -38,20 +38,19 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <article class="float-left">
-        <div class="float-left"></div>
+      <article class="float">
+        <div class="float-left">
         <input type="file" multiple accept="image/*" onChange={onImageChange} />
         { imageURLs.map(imageSrc => <img className='images' src={imageSrc} />)}
-        <div class="float-right"></div>
+        </div>
+        <div class="float-right">
+        <input type="file" multiple accept="image/*" onChange={onSecondImageChange} />
+        { secondImage.map(aimageSrc => <img className='images' src={aimageSrc} />)} 
+        </div>
         
       </article>
-      <article class="float-right">
-        <div class="float-left"></div>
-        <div class="float-right"> <input type="file" multiple accept="image/*" onChange={onSecondImageChange} />
-        { secondImage.map(aimageSrc => <img className='images' src={aimageSrc} />)} </div>
-      </article>
         
-        <button className = "submit" onClick={submitHandler}>Submit</button>
+        <button class="button-56" role="button" onClick={submitHandler}>Submit</button>
       </header>
       
     </div>
