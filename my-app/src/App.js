@@ -38,6 +38,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <p className="title">Merge Your Images</p>
       <article class="float">
         <div class="float-left">
         <input type="file" multiple accept="image/*" onChange={onImageChange} />
